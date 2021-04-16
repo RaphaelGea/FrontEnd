@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Contact - Hollow Knight</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="caixa">
+            <h1 class="logo"><img src="imagens/The_Knight_Idle.png" alt="Miniatura do cavaleiro"></h1>
+
+            <nav class="cabecalho">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="feiticos.html">Spells</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <section class="contato">
+                <label for="nomesobrenome">Name</label>
+                <input type="text" id="nomesobrenome" class="imput-padrao" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="imput-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="fone">Fone</label>
+                <input type="tel" id="fone" class="imput-padrao" required placeholder="(XX) XXXXX-XXXX">
+
+                <label for="mensagem">Message</label>
+                <textarea name="mensagem" id="mensagem" cols="70" rows="10" class="imput-padrao" required></textarea>
+
+                <fieldset>
+                    <legend>How do you prefer to be contacted?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" id="radio-email"
+                            value="email">Email</label>
+
+                    <label for="radio-fone"><input type="radio" name="contato" id="radio-telefone"
+                            value="fone">Fone</label>
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" id="radio-whatsapp"
+                            value="whatsapp">WhatsApp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What time do you prefer to be attended?</legend>
+                    <select>
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="night">Night</option>
+                    </select>
+                </fieldset>
+
+                <label><input type="checkbox" class="checkbox">Would you like to receive news by email?</label>
+
+                <input type="submit" value="Submit" class="enviar">
+            </section>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>8h ~ 20h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </form>
+    </main>
+    <footer>
+        <img src="imagens/Hornet_Idle.png" />
+        <p class="copyright">&copy; <a href="https://hollowknight.fandom.com/wiki/">Fonte Hollow Knight WIKI</a></p>
+    </footer>
+</body>
+
+</html>
